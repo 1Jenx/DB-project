@@ -18,29 +18,29 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 ## Database Structure
 
-*Entities & Attributes*
+Entities & Attributes
 
-* *Department* –> DepartmentID, Name
-* *Clinic* –> ClinicID, Name, Address, DepartmentID
-* *Doctor* –> DoctorID, Name, Phone, Address, DepartmentID
-* *Patient* –> PatientID, Name, Phone, Address, BirthDate, Job
-* *Appointment* –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis
+* Department –> DepartmentID, Name
+* Clinic –> ClinicID, Name, Address, DepartmentID
+* Doctor –> DoctorID, Name, Phone, Address, DepartmentID
+* Patient –> PatientID, Name, Phone, Address, BirthDate, Job
+* Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis
 
 ---
 
 ## Relationships
 
-* One *Department -> Many Clinics
-* One *Department -> Many Doctors
-* One *Clinic -> One Department
-* One *Doctor -> Many Appointments
-* One *Patient -> Many Appointments
+* One Department -> Many Clinics
+* One Department -> Many Doctors
+* One Clinic -> One Department
+* One Doctor -> Many Appointments
+* One Patient -> Many Appointments
 
 ---
 
 ## Data Overview
 
-*Sample Data Includes:*
+Sample Data Includes:
 
 * *10 Departments* (e.g., Cardiology, Neurology, Pediatrics, Oncology).
 * *10 Clinics* linked to departments.
