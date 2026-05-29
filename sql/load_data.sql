@@ -3,52 +3,52 @@ INSERT INTO Department VALUES
 (1, 'Cardiology'),
 (2, 'Neurology'),
 (3, 'Dermatology'),
-(4, 'Orthopedics'),
+(4, 'Otolaryngology'),
 (5, 'Pediatrics'),
-(6, 'General Medicine'),
+(6, 'Urology'),
 (7, 'Oncology'),
 (8, 'Psychiatry'),
 (9, 'Gastroenterology'),
-(10, 'Endocrinology');
+(10, 'Dentistry');
 
 -- Inserts Clinic data --
 INSERT INTO Clinic VALUES
-(101, 'Heart Clinic', '123 Cardio St', 1),
-(102, 'Brain Clinic', '456 Neuro Ave', 2),
-(103, 'Skin Clinic', '789 Derma Rd', 3),
-(104, 'Bone Clinic', '321 Ortho Blvd', 4),
-(105, 'Children Clinic', '654 Kids Ln', 5),
-(106, 'Family Clinic', '987 Health Dr', 6),
-(107, 'Cancer Clinic', '159 Onco Ct', 7),
-(108, 'Mind Clinic', '753 Psych Pkwy', 8),
-(109, 'Stomach Clinic', '258 Gastro St', 9),
-(110, 'Hormone Clinic', '369 Endo Way', 10);
+(101, 'HeartCare Cardiology Clinic', '123 Riverdale', 1),
+(102, 'NeuroHealth Neurology Center', '456 Pine Harbor', 2),
+(103, 'ClearSkin Dermatology Clinic', '789 Clearwater Heights', 3),
+(104, 'Harmony ENT Clinic', '321 Brookfield', 4),
+(105, 'Little Stars Pediatrics Clinic', '654 Brookfield', 5),
+(106, 'Advanced Urology Center', '987 Brookfield', 6),
+(107, 'Hope Oncology Institute', '159 Stonebridge', 7),
+(108, 'MindWell Psychiatry Clinic', '753 Meadowbrook', 8),
+(109, 'Digestive Health Gastroenterology Center', '258 Hillcrest', 9),
+(110, 'Bright Smile Dental Clinic', '369 Spring Valley', 10);
 
 -- Inserts Doctor data --
 INSERT INTO Doctor VALUES
-(201, 'Dr. Ayman', '111-1111', 'Cardio Address', 1),
-(202, 'Dr. Leila', '222-2222', 'Neuro Address', 2),
-(203, 'Dr. Sara', '333-3333', 'Derma Address', 3),
-(204, 'Dr. Omar', '444-4444', 'Ortho Address', 4),
-(205, 'Dr. Hana', '555-5555', 'Pediatrics Address', 5),
-(206, 'Dr. Adel', '666-6666', 'General Address', 6),
-(207, 'Dr. Kamal', '777-7777', 'Onco Address', 7),
-(208, 'Dr. Rania', '888-8888', 'Psych Address', 8),
-(209, 'Dr. Mona', '999-9999', 'Gastro Address', 9),
-(210, 'Dr. Youssef', '000-0000', 'Endo Address', 10);
+(201, 'Dr. Ayman', '111-1111', '42 Maple St', 1),
+(202, 'Dr. Leila', '222-2222', '87 Oak Ave', 2),
+(203, 'Dr. Sara', '333-3333', '15 Cedar Rd', 3),
+(204, 'Dr. Omar', '444-4444', '63 Willow Ln', 4),
+(205, 'Dr. Hana', '555-5555', '29 Birch St', 5),
+(206, 'Dr. Adel', '666-6666', '91 Pine Ave', 6),
+(207, 'Dr. Kamal', '777-7777', '54 Elm Rd', 7),
+(208, 'Dr. Rania', '888-8888', '18 Cherry Ln', 8),
+(209, 'Dr. Mona', '999-9999', '67 Aspen St', 9),
+(210, 'Dr. Youssef', '000-0000', '33 Grove Ave', 10);
 
 -- Inserts Patient data --
 INSERT INTO Patient VALUES
-(12527, 'Ali Ahmed', '0100000000', 'Cairo', '1990-01-01', 'Teacher'),
-(12528, 'Sara Youssef', '0100000001', 'Giza', '1985-05-20', 'Engineer'),
-(12529, 'Omar Adel', '0100000002', 'Mansoura', '1992-03-15', 'Accountant'),
-(12530, 'Maya Fathy', '0100000003', 'Aswan', '1988-07-10', 'Designer'),
-(12531, 'Noor Khaled', '0100000004', 'Tanta', '1991-09-25', 'Nurse'),
-(12532, 'Ziad Hany', '0100000005', 'Alexandria', '1987-11-30', 'Lawyer'),
-(12533, 'Laila Samir', '0100000006', 'Fayoum', '1995-12-05', 'Pharmacist'),
-(12534, 'Yara Said', '0100000007', 'Suez', '1993-04-17', 'Banker'),
-(12535, 'Tamer Sherif', '0100000008', 'Zagazig', '1989-06-12', 'Driver'),
-(12536, 'Huda Mostafa', '0100000009', 'Minya', '1994-08-19', 'Doctor');
+(12527, 'Mohamed Ahmed', '0100000000', '24 River St', '2000-01-01', 'Teacher'),
+(12528, 'Sara Mohamed', '0100000001', '68 Park Ave', '1985-05-20', 'Engineer'),
+(12529, 'Ahmed Galal', '0100000002', '11 Hill Rd', '1992-03-15', 'Accountant'),
+(12530, 'Mariam Fathy', '0100000003', '57 Lake Ln', '1988-07-10', 'Designer'),
+(12531, 'Jana Khaled', '0100000004', '83 Meadow St', '1991-09-25', 'Nurse'),
+(12532, 'Ahmed Hany', '0100000005', '36 Forest Ave', '1987-11-30', 'Lawyer'),
+(12533, 'Farah Samir', '0100000006', '72 Valley Rd', '1996-02-05', 'Pharmacist'),
+(12534, 'Habiba Said', '0100000007', '19 Sunset Ln', '1993-07-17', 'Banker'),
+(12535, 'Omar Sherif', '0100000008', '45 Garden St', '1987-06-12', 'Driver'),
+(12536, 'Huda Abdullah', '0100000009', '98 Ridge Ave', '1989-08-19', 'Doctor');
 
 -- Inserts Appointment data --
 INSERT INTO Appointment VALUES
