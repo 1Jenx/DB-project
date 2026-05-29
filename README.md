@@ -14,7 +14,7 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 ## 🔍 Project Goals
 
 - Design and implement a *normalized relational database* for clinical operations.
--Enable efficient *CRUD* operations (Create, Read, Update, Delete).
+- Enable efficient *CRUD* operations (Create, Read, Update, Delete).
 * Write *practical SQL queries* for healthcare use cases.
 * Maintain *data integrity* using relationships and constraints.
 
