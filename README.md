@@ -74,7 +74,7 @@ JOIN Department ON Clinic.DepartmentID = Department.DepartmentID
 WHERE Department.Name = 'Cardiology';
 
 
-### 3️⃣ Total money paid by patient 12527 in the last 3 years
+### 3- Total money paid by patient 12527 in the last 3 years
 
 sql
 SELECT SUM(Cost) AS TotalPaid
@@ -83,7 +83,7 @@ WHERE PatientID = 12527
   AND Date >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR);
 
 
-### 4️⃣ Update patient contact information
+### 4- Update patient contact information
 
 sql
 UPDATE Patient
@@ -95,7 +95,7 @@ WHERE PatientID = 12530;
 
 ---
 
-## ⚙ Setup Instructions
+##Setup Instructions
 
 ### 1️⃣ Create the database and tables
 
