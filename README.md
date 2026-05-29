@@ -2,17 +2,17 @@
 
 ## Project Overview
 
-This project implements a relational database system to manage clinic operations, including: patients ,appointments ,doctors ,clinics , and departments.
-It demonstrates: SQL database design, data population, queries, and update triggers to simulate real world healthcare management.
+The Clinic Management System is a relational database project designed to support the management of healthcare operations. The database stores and organizes information related to patients, doctors, appointments, clinics, and departments. The project demonstrates the use of SQL for database design, data population, querying, and maintaining relationships between entities in a healthcare environment.
 
 ---
 
-## Project Goals
+## Project Objectives
 
-- Design and implement a normalized relational database for clinical operations.
-- Enable efficient CRUD operations (Create, Read, Update, Delete).
-- Write practical SQL queries for healthcare use cases.
-- Maintain data integrity using relationships and constraints.
+* Develop a structured and normalized database for managing clinic activities.
+* Support essential database operations, including Create, Read, Update, and Delete (CRUD).
+* Implement practical SQL queries for common healthcare management tasks.
+* Ensure data consistency and integrity through primary keys, foreign keys, and constraints.
+* Demonstrate the use of relational database concepts in a real-world application.
 
 ---
 
@@ -20,21 +20,21 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 Entities & Attributes:
 
-- Department –> DepartmentID, Name.
-- Clinic –> ClinicID, Name, Address, DepartmentID
-- Doctor –> DoctorID, Name, Phone, Address, DepartmentID.
-- Patient –> PatientID, Name, Phone, Address, BirthDate, Job.
-- Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis.
+* Department –> DepartmentID, Name.
+* Clinic –> ClinicID, Name, Address, DepartmentID
+* Doctor –> DoctorID, Name, Phone, Address, DepartmentID.
+* Patient –> PatientID, Name, Phone, Address, BirthDate, Job.
+* Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis.
 
 ---
 
 ## Relationships
 
-- One Department -> Many Clinics
-- One Department -> Many Doctors
-- One Clinic -> One Department
-- One Doctor -> Many Appointments
-- One Patient -> Many Appointments
+* One Department -> Many Clinics
+* One Department -> Many Doctors
+* One Clinic -> One Department
+* One Doctor -> Many Appointments
+* One Patient -> Many Appointments
 
 ---
 
@@ -42,11 +42,11 @@ Entities & Attributes:
 
 Sample Data Includes:
 
-- 10 Departments (Cardiology, Neurology, Pediatrics, Oncology).
-- 10 Clinics linked to departments.
-- 10 Doctors assigned to departments.
-- 10 Patients with personal details.
-- 10 Appointments with diagnosis, cost, and status.
+* 10 Departments (Cardiology, Neurology, Pediatrics, Oncology).
+* 10 Clinics linked to departments.
+* 10 Doctors assigned to departments.
+* 10 Patients with personal details.
+* 10 Appointments with diagnosis, cost, and status.
 
 ---
 
@@ -58,12 +58,11 @@ sql
 SELECT Name
 FROM Patient
 WHERE PatientID IN (
-    SELECT PatientID
-    FROM Appointment
-    WHERE Diagnosis = 'Fatty liver' 
-      AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+SELECT PatientID
+FROM Appointment
+WHERE Diagnosis = 'Fatty liver'
+AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
 );
-
 
 ### 2- Addresses of Cardiology clinics
 
@@ -73,15 +72,13 @@ FROM Clinic
 JOIN Department ON Clinic.DepartmentID = Department.DepartmentID
 WHERE Department.Name = 'Cardiology';
 
-
 ### 3- Total money paid by patient 12527 in the last 3 years
 
 sql
 SELECT SUM(Cost) AS TotalPaid
 FROM Appointment
-WHERE PatientID = 12527 
-  AND Date >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR);
-
+WHERE PatientID = 12527
+AND Date >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR);
 
 ### 4- Update patient contact information
 
@@ -89,7 +86,6 @@ sql
 UPDATE Patient
 SET Address = 'New Address', PhoneNumber = 'New PhoneNumber'
 WHERE PatientID = 12530;
-
 
 ---
 
@@ -102,9 +98,8 @@ DROP DATABASE IF EXISTS Clinic_System;
 CREATE DATABASE Clinic_System;
 USE Clinic_System;
 
-- Create tables (Department, Clinic, Doctor, Patient, Appointment)
-- Add foreign keys and constraints
-
+* Create tables (Department, Clinic, Doctor, Patient, Appointment)
+* Add foreign keys and constraints
 
 ### 2- Populate with sample data
 
@@ -112,22 +107,36 @@ sql
 INSERT INTO Department VALUES
 (1, 'Cardiology'), (2, 'Neurology'), (3, 'Dermatology'), ...;
 
-
 ### 3-Run queries
 
 Test the provided SELECT, UPDATE, and JOIN queries.
 
 ---
 
-##  Learning Outcomes
+## Repository Structure
 
-* Designing a fully relational database* with multiple relationships.
-* Writing complex SQL queries with joins, subqueries, and aggregates.
-* Using foreign keys to ensure data integrity.
-* Populating a database with realistic healthcare data.
+The project repository is organized as follows:
 
-##  Conclusion
+* **README.md** – Project description and setup instructions.
+* **report.docx** – Detailed project report.
+* **presentation.pptx** – Project presentation slides.
+* **video_link.txt** – Public link to the project walkthrough video.
+* **sql/** – SQL scripts including table creation, data loading, queries, and triggers.
+* **src/** – Additional source code or application files (if applicable).
 
-The Clinic Management System demonstrates how a well-designed relational database can simplify medical data management.
-By combining structured schema design, meaningful relationships, and practical SQL queries, this project offers a scalable solution for real world clinic operations.
-Future work could integrate a web-based interface and authentication system to make it production ready.
+---
+
+## Learning Outcomes
+
+* Designing a normalized relational database with multiple entity relationships.
+* Creating and managing tables using SQL.
+* Writing SQL queries involving joins, subqueries, and aggregate functions.
+* Applying primary and foreign key constraints to maintain data integrity.
+* Populating a database with realistic healthcare-related data.
+* Understanding the practical implementation of database systems in healthcare management.
+
+---
+
+## Conclusion
+
+This project demonstrates how a relational database can be used to efficiently manage clinic operations and healthcare records. Through structured database design, well-defined relationships, and practical SQL operations, the system provides an organized solution for handling patient information, doctor assignments, clinic departments, and appointments. The design is scalable and can be extended in the future with additional features such as a graphical user interface, authentication mechanisms, and advanced reporting capabilities.
