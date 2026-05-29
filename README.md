@@ -54,7 +54,6 @@ Sample Data Includes:
 
 ### 1- Patients diagnosed with Fatty liver in the last year
 
-sql
 SELECT Name
 FROM Patient
 WHERE PatientID IN (
@@ -66,7 +65,6 @@ AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
 
 ### 2- Addresses of Cardiology clinics
 
-sql
 SELECT Clinic.Address
 FROM Clinic
 JOIN Department ON Clinic.DepartmentID = Department.DepartmentID
@@ -74,7 +72,6 @@ WHERE Department.Name = 'Cardiology';
 
 ### 3- Total money paid by patient 12527 in the last 3 years
 
-sql
 SELECT SUM(Cost) AS TotalPaid
 FROM Appointment
 WHERE PatientID = 12527
@@ -82,7 +79,6 @@ AND Date >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR);
 
 ### 4- Update patient contact information
 
-sql
 UPDATE Patient
 SET Address = 'New Address', PhoneNumber = 'New PhoneNumber'
 WHERE PatientID = 12530;
@@ -93,7 +89,6 @@ WHERE PatientID = 12530;
 
 ### 1️- Create the database and tables
 
-sql
 DROP DATABASE IF EXISTS Clinic_System;
 CREATE DATABASE Clinic_System;
 USE Clinic_System;
@@ -103,7 +98,6 @@ USE Clinic_System;
 
 ### 2- Populate with sample data
 
-sql
 INSERT INTO Department VALUES
 (1, 'Cardiology'), (2, 'Neurology'), (3, 'Dermatology'), ...;
 
