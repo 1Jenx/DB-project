@@ -7,7 +7,7 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 
 ---
 
-## 🔍 Project Goals
+## Project Goals
 
 - Design and implement a *normalized relational database* for clinical operations.
 - Enable efficient *CRUD* operations (Create, Read, Update, Delete).
@@ -16,7 +16,7 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 
 ---
 
-## 🗂 Database Structure
+## Database Structure
 
 *Entities & Attributes*
 
@@ -28,7 +28,7 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 
 ---
 
-## 🔗 Relationships
+## Relationships
 
 * One *Department* → Many *Clinics*
 * One *Department* → Many *Doctors*
@@ -38,7 +38,7 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 
 ---
 
-## 📂 Data Overview
+## Data Overview
 
 *Sample Data Includes:*
 
@@ -50,9 +50,9 @@ It demonstrates *SQL database design, **data population, **queries, and **update
 
 ---
 
-## 🧪 Example SQL Queries
+## Example SQL Queries
 
-### 1️⃣ Patients diagnosed with Fatty liver in the last year
+### 1- Patients diagnosed with Fatty liver in the last year
 
 sql
 SELECT Name
@@ -65,7 +65,7 @@ WHERE PatientID IN (
 );
 
 
-### 2️⃣ Addresses of Cardiology clinics
+### 2- Addresses of Cardiology clinics
 
 sql
 SELECT Clinic.Address
