@@ -20,11 +20,11 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 Entities & Attributes:
 
--Department –> DepartmentID, Name.
--Clinic –> ClinicID, Name, Address, DepartmentID
--Doctor –> DoctorID, Name, Phone, Address, DepartmentID.
--Patient –> PatientID, Name, Phone, Address, BirthDate, Job.
--Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis.
+- Department –> DepartmentID, Name.
+- Clinic –> ClinicID, Name, Address, DepartmentID
+- Doctor –> DoctorID, Name, Phone, Address, DepartmentID.
+- Patient –> PatientID, Name, Phone, Address, BirthDate, Job.
+- Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis.
 
 ---
 
