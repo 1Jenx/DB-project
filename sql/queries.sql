@@ -6,7 +6,7 @@ FROM Patient
 WHERE PatientID IN (
     SELECT PatientID
     FROM Appointment
-    WHERE Diagnosis = 'Migraine' 
+    WHERE Diagnosis = 'fatty liver' 
       AND Date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
 );
 
@@ -14,12 +14,12 @@ WHERE PatientID IN (
 SELECT Clinic.Address
 FROM Clinic
 JOIN Department ON Clinic.DepartmentID = Department.DepartmentID
-WHERE Department.Name = 'Dermatology';
+WHERE Department.Name = 'cardiology';
 
 -- Total money paid by patient with ID 12527 in the last 3 years --
 SELECT SUM(Cost) AS TotalPaid
 FROM Appointment
-WHERE PatientID = 12529 
+WHERE PatientID = 12527 
   AND Date >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR);
 
 -- Sample UPDATE queries --
