@@ -20,11 +20,11 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 Entities & Attributes
 
-* Department –> DepartmentID, Name
-* Clinic –> ClinicID, Name, Address, DepartmentID
-* Doctor –> DoctorID, Name, Phone, Address, DepartmentID
-* Patient –> PatientID, Name, Phone, Address, BirthDate, Job
-* Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis
+-Department –> DepartmentID, Name
+-Clinic –> ClinicID, Name, Address, DepartmentID
+-Doctor –> DoctorID, Name, Phone, Address, DepartmentID
+-Patient –> PatientID, Name, Phone, Address, BirthDate, Job
+-Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis
 
 ---
 
@@ -42,11 +42,11 @@ Entities & Attributes
 
 Sample Data Includes:
 
-* *10 Departments* (e.g., Cardiology, Neurology, Pediatrics, Oncology).
-* *10 Clinics* linked to departments.
-* *10 Doctors* assigned to departments.
-* *10 Patients* with personal details.
-* *10 Appointments* with diagnosis, cost, and status.
+* 10 Departments (Cardiology, Neurology, Pediatrics, Oncology).
+* 10 Clinics linked to departments.
+* 10 Doctors assigned to departments.
+* 10 Patients with personal details.
+* 10 Appointments with diagnosis, cost, and status.
 
 ---
 
