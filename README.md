@@ -30,11 +30,11 @@ Entities & Attributes:
 
 ## Relationships
 
-* One Department -> Many Clinics
-* One Department -> Many Doctors
-* One Clinic -> One Department
-* One Doctor -> Many Appointments
-* One Patient -> Many Appointments
+- One Department -> Many Clinics
+- One Department -> Many Doctors
+- One Clinic -> One Department
+- One Doctor -> Many Appointments
+- One Patient -> Many Appointments
 
 ---
 
@@ -42,11 +42,11 @@ Entities & Attributes:
 
 Sample Data Includes:
 
-* 10 Departments (Cardiology, Neurology, Pediatrics, Oncology).
-* 10 Clinics linked to departments.
-* 10 Doctors assigned to departments.
-* 10 Patients with personal details.
-* 10 Appointments with diagnosis, cost, and status.
+- 10 Departments (Cardiology, Neurology, Pediatrics, Oncology).
+- 10 Clinics linked to departments.
+- 10 Doctors assigned to departments.
+- 10 Patients with personal details.
+- 10 Appointments with diagnosis, cost, and status.
 
 ---
 
