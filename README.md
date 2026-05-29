@@ -93,44 +93,41 @@ WHERE PatientID = 12530;
 
 ---
 
----
-
 ##Setup Instructions
 
-### 1️⃣ Create the database and tables
+### 1️- Create the database and tables
 
 sql
 DROP DATABASE IF EXISTS Clinic_System;
 CREATE DATABASE Clinic_System;
 USE Clinic_System;
 
--- Create tables (Department, Clinic, Doctor, Patient, Appointment)
--- Add foreign keys and constraints
+- Create tables (Department, Clinic, Doctor, Patient, Appointment)
+- Add foreign keys and constraints
 
 
-### 2️⃣ Populate with sample data
+### 2- Populate with sample data
 
 sql
 INSERT INTO Department VALUES
 (1, 'Cardiology'), (2, 'Neurology'), (3, 'Dermatology'), ...;
 
 
-### 3️⃣ Run queries
+### 3-Run queries
 
-Test the provided *SELECT, **UPDATE, and **JOIN* queries.
+Test the provided SELECT, UPDATE, and JOIN queries.
 
 ---
 
-## 📘 Learning Outcomes
+##  Learning Outcomes
 
-* Designing a *fully relational database* with multiple relationships.
-* Writing *complex SQL queries* with joins, subqueries, and aggregates.
-* Using *foreign keys* to ensure data integrity.
+* Designing a fully relational database* with multiple relationships.
+* Writing complex SQL queries with joins, subqueries, and aggregates.
+* Using foreign keys to ensure data integrity.
 * Populating a database with realistic healthcare data.
 
-## 🏁 Conclusion
+##  Conclusion
 
 The Clinic Management System demonstrates how a well-designed relational database can simplify medical data management.
-By combining structured schema design, meaningful relationships, and practical SQL queries, this project offers a scalable solution for real-world clinic operations.
-Future work could integrate a *web-based interface* and *authentication system* to make it production-ready.
-https://youtu.be/oatTpNKI26w?si=dWaT0WAiveFeQFbz
+By combining structured schema design, meaningful relationships, and practical SQL queries, this project offers a scalable solution for real world clinic operations.
+Future work could integrate a web-based interface and authentication system to make it production ready.
