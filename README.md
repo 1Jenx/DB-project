@@ -30,11 +30,11 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 ## Relationships
 
-* One *Department* → Many *Clinics*
-* One *Department* → Many *Doctors*
-* One *Clinic* → One *Department*
-* One *Doctor* → Many *Appointments*
-* One *Patient* → Many *Appointments*
+* One *Department -> Many Clinics
+* One *Department -> Many Doctors
+* One *Clinic -> One Department
+* One *Doctor -> Many Appointments
+* One *Patient -> Many Appointments
 
 ---
 
