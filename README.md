@@ -113,18 +113,7 @@ Test the provided SELECT, UPDATE, and JOIN queries.
 
 ---
 
-## Repository Structure
 
-The project repository is organized as follows:
-
-* **README.md** – Project description and setup instructions.
-* **report.docx** – Detailed project report.
-* **presentation.pptx** – Project presentation slides.
-* **video_link.txt** – Public link to the project walkthrough video.
-* **sql/** – SQL scripts including table creation, data loading, queries, and triggers.
-* **src/** – Additional source code or application files (if applicable).
-
----
 
 ## Learning Outcomes
 
