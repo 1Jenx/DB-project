@@ -18,10 +18,10 @@ It demonstrates: SQL database design, data population, queries, and update trigg
 
 ## Database Structure
 
-Entities & Attributes
+Entities & Attributes:
 
 -Department –> DepartmentID, Name.
--Clinic –> ClinicID, Name, Address, DepartmentID.
+-Clinic –> ClinicID, Name, Address, DepartmentID
 -Doctor –> DoctorID, Name, Phone, Address, DepartmentID.
 -Patient –> PatientID, Name, Phone, Address, BirthDate, Job.
 -Appointment –> AppointmentID, Date, PatientID, DoctorID, StartTime, EndTime, Cost, Status, Diagnosis.
