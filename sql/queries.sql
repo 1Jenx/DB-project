@@ -1,6 +1,6 @@
 -- Running the required queries --
 
---  Patients diagnosed with 'Migraine' in the last year --
+--  Patients diagnosed with 'Fatty liver' in the last year --
 SELECT Name
 FROM Patient
 WHERE PatientID IN (
